@@ -1,2 +1,29 @@
-# co-leyusports-com-cn
-乐鱼体育 - https://co-leyusports.com.cn
+# 乐鱼体育 - 官方网站
+
+## 简介
+
+乐鱼体育是一个面向体育爱好者的在线平台，通过域名 [https://co-leyusports.com.cn](https://co-leyusports.com.cn) 提供服务。该网站旨在为用户提供便捷的体育信息浏览与互动体验，覆盖多种体育项目及相关内容。
+
+## 网站特点
+
+- **体育内容聚合**：乐鱼体育整合了丰富的体育赛事信息、动态资讯和用户讨论，帮助用户快速了解感兴趣的体育领域。
+- **用户友好界面**：网站设计注重简洁与易用性，访问 [https://co-leyusports.com.cn](https://co-leyusports.com.cn) 即可直观浏览核心功能。
+- **持续更新**：乐鱼体育保持内容更新，确保用户获取到较新的体育相关信息。
+
+## 访问方式
+
+您可以直接通过以下链接访问乐鱼体育：
+
+[https://co-leyusports.com.cn](https://co-leyusports.com.cn)
+
+建议使用现代浏览器（如 Chrome、Edge 或 Firefox）以获得最佳浏览体验。
+
+## 注意事项
+
+- 本仓库仅用于介绍乐鱼体育官方网站，不包含任何下载、安装或第三方链接。
+- 请通过官方域名 [https://co-leyusports.com.cn](https://co-leyusports.com.cn) 访问，确保信息安全。
+- 如有任何问题，建议联系网站官方渠道获取支持。
+
+## 免责声明
+
+本 README 文件仅为信息展示用途，不构成对乐鱼体育平台内容的背书或担保。用户在使用该网站时应遵守相关法律法规及平台规则。
