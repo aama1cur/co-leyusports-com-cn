@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 稳定入口与站点说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf9;
+      font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+      color: #1e1e1e;
+      line-height: 1.8;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 680px;
+      width: 100%;
+    }
+
+    /* 文章标题 */
+    .post-title {
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+      line-height: 1.25;
+      color: #0b0b0b;
+      border-left: 4px solid #b7a48b;
+      padding-left: 1.25rem;
+    }
+
+    /* 导语 / 摘要 */
+    .subhead {
+      font-size: 1.05rem;
+      color: #5a5a5a;
+      margin-top: 0.6rem;
+      margin-bottom: 2.4rem;
+      padding-left: 1.75rem;
+      font-style: italic;
+      border-bottom: 1px solid #e6ddd0;
+      padding-bottom: 1.2rem;
+    }
+
+    /* 正文段落 */
+    .content p {
+      margin-bottom: 1.7rem;
+      font-size: 1.05rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+
+    /* 引用块 */
+    .block-quote {
+      background: #f0ede7;
+      padding: 1.6rem 2rem;
+      margin: 2.2rem 0;
+      border-radius: 2px;
+      font-style: normal;
+      border-left: 6px solid #b29c83;
+      color: #2d2a26;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .block-quote strong {
+      color: #4e3f30;
+      font-weight: 600;
+    }
+
+    /* 小提示 / 旁注 */
+    .note-box {
+      background: #fffcf7;
+      border: 1px solid #ddd6cb;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-radius: 6px;
+      font-size: 0.98rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .note-box span {
+      display: inline-block;
+      background: #b7a48b;
+      color: white;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.8rem;
+      border-radius: 12px;
+      margin-right: 0.6rem;
+      font-weight: 400;
+      vertical-align: middle;
+    }
+
+    /* 内联链接样式 */
+    a {
+      color: #3f2f1f;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 0.5px;
+      transition: all 0.1s ease;
+    }
+    a:hover {
+      color: #7a5b3e;
+      text-decoration-thickness: 1.5px;
+    }
+
+    /* 分隔线 */
+    .divider {
+      margin: 3rem 0 0.8rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d6cdbe, transparent);
+    }
+
+    /* 访问句（轻量脚标） */
+    .visit-note {
+      margin: 2rem 0 1rem;
+      color: #78746c;
+      font-size: 0.9rem;
+      text-align: center;
+      letter-spacing: 0.3px;
+      border-top: 1px solid #ece5da;
+      padding-top: 1.8rem;
+    }
+
+    /* FAQ 摘要（极简） */
+    .faq-mini {
+      margin: 2rem 0 1rem;
+      padding: 0.5rem 0;
+    }
+    .faq-mini details {
+      margin-bottom: 0.6rem;
+      border-bottom: 1px dashed #ddd6c9;
+      padding-bottom: 0.6rem;
+    }
+    .faq-mini summary {
+      font-weight: 500;
+      cursor: pointer;
+      color: #2c241d;
+      font-size: 1rem;
+      padding: 0.3rem 0;
+    }
+    .faq-mini details[open] summary {
+      color: #4b3827;
+    }
+    .faq-mini details p {
+      margin: 0.6rem 0 0.4rem 1rem;
+      font-size: 0.95rem;
+      color: #45423b;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 520px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+      .post-title {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+        border-left-width: 3px;
+      }
+      .subhead {
+        font-size: 0.95rem;
+        padding-left: 1rem;
+      }
+      .content p {
+        font-size: 1rem;
+      }
+      .block-quote {
+        padding: 1.2rem 1.2rem;
+        margin: 1.6rem 0;
+      }
+      .note-box {
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    /* 极小屏 */
+    @media (max-width: 380px) {
+      .post-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- 文章标题 -->
+    <h1 class="post-title">稳定入口与页面说明</h1>
+
+    <!-- 导语 -->
+    <div class="subhead">
+      从站点结构到使用方式：一份面向浏览者的简洁导览，帮助你快速了解 <a href="https://hub-aiyouxisports.com">爱游戏</a> 所承载的内容逻辑与访问路径。
+    </div>
+
+    <!-- 正文 -->
+    <div class="content">
+
+      <p>
+        对于持续更新的内容型站点而言，入口的稳定性往往比界面设计更为基础。用户通过浏览器书签、搜索引擎或日常访问记录进入一个页面时，最不希望看到的是频繁变动的链接或模糊的导航提示。正因如此，<a href="https://hub-aiyouxisports.com">爱游戏</a> 在结构上采用了相对固定的路径设计，尽可能降低用户在不同设备或网络环境下寻找目标内容的成本。
+      </p>
+
+      <p>
+        从信息组织上看，该站点的首页承担着类似“目录索引”的角色。它没有堆砌大量动态模块或轮播图，而是将分类与最近更新以克制的方式呈现。如果你习惯通过一个干净、加载迅速的页面来获得方向感，那么这种设计语言应该会带来不错的体验。页面上方的固定导航区与正文区域之间保持了适度的留白，视觉重心落在内容本身，而非装饰元素。
+      </p>
+
+      <!-- 引用提示块 -->
+      <div class="block-quote">
+        <strong>引用提示</strong> · 在浏览过程中，建议留意页面底部的更新日期标记。站点内容会不定期补充和修正，但不会改变主要 URL 结构。这样，当你下次直接输入或点击 <a href="https://hub-aiyouxisports.com">爱游戏</a> 时，依然能够沿着熟悉的路径找到此前关注的板块。
+      </div>
+
+      <p>
+        除了常规的文章列表，站内还设有一个简短的常见问题摘要区（见下文），用以说明几个最常被问及的操作细节。例如：如何区分不同内容分类、是否需要注册账号、以及 RSS 订阅的可用性。这类说明虽然篇幅不大，但对于首次接触 <a href="https://hub-aiyouxisports.com">爱游戏</a> 的访客来说，能够减少试探性的点击，直接建立对站点能力的预期。
+      </p>
+
+      <p>
+        在访问稳定性方面，建议使用主域名进入，避免依赖第三方聚合链接。当前站点未使用强制跳转或地区限制，多数网络环境下均可直接加载。如果你遇到加载缓慢的情况，通常与本地网络或 DNS 解析有关，而非站点服务端异常。
+      </p>
+
+      <!-- 小提示卡片 -->
+      <div class="note-box">
+        <span>提示</span> 页面所有内部链接均采用相对路径，即使未来更换域名前缀（仅作假设），站内跳转依然有效。主入口 <a href="https://hub-aiyouxisports.com">爱游戏</a> 会长期保持可访问状态，内容迭代时不会突然移除旧页面，而是以归档形式保留。
+      </div>
+
+      <p>
+        写到这里，不妨再补充一点：站点的内容更新频率并不固定，但每次更新都会在首页的更新摘要栏中留下记录。如果你希望第一时间获得变更通知，可以关注该摘要区域，或者定期直接访问 <a href="https://hub-aiyouxisports.com">爱游戏</a> 查看。相比邮件推送或社交平台通知，这种“主动访问”的方式更轻量，也更符合极简博客式站点的初衷。
+      </p>
+    </div>
+
+    <!-- FAQ 摘要（简洁版本） -->
+    <div class="faq-mini">
+      <details>
+        <summary>▸ 是否需要注册或登录？</summary>
+        <p>目前站点内容完全公开，无需注册账号即可浏览全部页面。未来若增加评论或收藏功能，可能会引入可选的身份绑定，但阅读权限始终开放。</p>
+      </details>
+      <details>
+        <summary>▸ 站内文章可以转载或引用吗？</summary>
+        <p>引用原文片段时建议注明出处链接（指向 <a href="https://hub-aiyouxisports.com">爱游戏</a> 对应页面）。全文转载需要事先联系并获得许可，这是对原创内容的基本尊重。</p>
+      </details>
+      <details>
+        <summary>▸ 遇到链接失效或页面报错怎么办？</summary>
+        <p>请通过站内“联系”表单（位于页面底部）反馈，管理员通常会在两个工作日内检查并修复。你也可以稍后再试，部分临时问题由网络波动引起。</p>
+      </details>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 访问句 -->
+    <div class="visit-note">
+      <span>稳定入口 · 内容为先</span><br>
+      你可以随时回到这里，通过 <a href="https://hub-aiyouxisports.com">爱游戏</a> 继续阅读或查找过往记录。
+    </div>
+
+  </div>
+</body>
+</html>
