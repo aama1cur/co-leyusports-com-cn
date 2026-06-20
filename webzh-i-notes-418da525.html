@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 简明指南与访问手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f5f0;      /* 米白基调 */
+            font-family: 'Georgia', '宋体', 'Times New Roman', serif;
+            color: #2e2a24;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fefcf7;
+            padding: 2.5rem 2.8rem;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        /* hero 区：克制，突出站点名 */
+        .hero {
+            text-align: center;
+            margin-bottom: 2.8rem;
+            padding: 2rem 0 1.2rem;
+            border-bottom: 1px dashed #dcd5cb;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: #4e3e2f;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #7b6e5e;
+            font-style: italic;
+            border-top: 1px solid #e1d9ce;
+            display: inline-block;
+            padding-top: 8px;
+        }
+
+        /* 正文排版 */
+        p {
+            margin: 1.3rem 0;
+            font-size: 1.05rem;
+            text-indent: 2em;
+        }
+
+        p.no-indent {
+            text-indent: 0;
+        }
+
+        /* 引用块 / 提示框 */
+        .insight-box {
+            background: #f3efe8;
+            border-left: 6px solid #b7a48b;
+            padding: 1.2rem 1.8rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-style: normal;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .insight-box p {
+            margin: 0.5rem 0;
+            text-indent: 0;
+        }
+
+        .insight-box strong {
+            color: #4e3a2a;
+        }
+
+        .tip-card {
+            background: #fffbf5;
+            border: 1px solid #e2d7c9;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .tip-card h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #5a4a37;
+            margin-bottom: 0.6rem;
+            border-bottom: 1px dotted #dacfc0;
+            padding-bottom: 6px;
+        }
+
+        .tip-card p {
+            margin: 0.4rem 0;
+            text-indent: 0;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2.2rem 0 1.5rem;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: #f9f5ee;
+            padding: 1rem 1.2rem;
+            border-radius: 14px;
+        }
+
+        .feature-item h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #4f3f2e;
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-item p {
+            margin: 0.2rem 0;
+            font-size: 0.95rem;
+            text-indent: 0;
+        }
+
+        /* faq 摘要区 */
+        .faq-summary {
+            margin: 2.5rem 0 1.8rem;
+        }
+
+        .faq-summary h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #3d3328;
+            border-bottom: 1px solid #e0d6c9;
+            padding-bottom: 8px;
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item {
+            margin: 1rem 0;
+            padding: 0.6rem 0;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            color: #4f3f2e;
+        }
+
+        .faq-item .a {
+            margin-left: 1.2rem;
+            color: #5e5141;
+        }
+
+        /* 底部链接区域 */
+        .footer-links {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2d8cd;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #6f614f;
+        }
+
+        .footer-links a {
+            color: #4e3a2a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a48b;
+            transition: border-color 0.2s;
+        }
+
+        .footer-links a:hover {
+            border-bottom: 1px solid #4e3a2a;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 0.8rem;
+            }
+            .page-wrap {
+                padding: 1.5rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+                letter-spacing: 2px;
+            }
+            .feature-grid {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .insight-box {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+
+        <!-- hero 区 -->
+        <div class="hero">
+            <h1>爱游戏</h1>
+            <div class="sub">简明指南 · 访问提示 · 场景索引</div>
+        </div>
+
+        <!-- 引导段：简明指南 角度 -->
+        <p class="no-indent">日常使用浏览器访问游戏信息站时，选择合适的入口与了解页面结构往往被忽略。本文从实用角度出发，整理了一份围绕 <a href="https://webzh-i-game.com.cn" style="text-decoration: none; border-bottom: 1px dotted #b7a48b;">爱游戏</a> 的简短指引，帮助初次接触的用户建立清晰的操作概念，同时提醒一些容易被忽视的访问细节。</p>
+
+        <!-- 优势/特点区（用 feature grid 呈现） -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>信息聚合</h4>
+                <p>站点聚焦游戏资讯与资料整理，分类结构偏向直接，首页即呈现主要板块。</p>
+            </div>
+            <div class="feature-item">
+                <h4>轻量适配</h4>
+                <p>页面设计兼顾阅读效率，内容区域层次分明，适合快速浏览与检索。</p>
+            </div>
+            <div class="feature-item">
+                <h4>稳定入口</h4>
+                <p>建议将 <strong>爱游戏</strong> 添加至浏览器书签，避免通过第三方链接跳转。</p>
+            </div>
+        </div>
+
+        <!-- 说明区：场景与使用提示 引用块 -->
+        <div class="insight-box">
+            <p><strong>使用场景举例</strong> — 当需要查找某款游戏的背景设定、版本更新记录或社区讨论摘要时，<a href="https://webzh-i-game.com.cn" style="text-decoration: none; border-bottom: 1px dotted #7b6e5e;">爱游戏</a> 的内容聚合方式可节省逐页搜索的时间。但请注意，站点内容由用户或编辑贡献，建议交叉核对关键信息。</p>
+        </div>
+
+        <!-- 提示卡：访问提醒 (核心) -->
+        <div class="tip-card">
+            <h3>访问提醒</h3>
+            <p>• 直接输入域名 <code style="background:#efe9e0; padding:2px 6px; border-radius:4px;">webzh-i-game.com.cn</code> 可进入主站，部分路径可能调整，若遇到页面异常请先刷新。</p>
+            <p>• 站内部分资源（如图片、文档）可能引用外部源，首次加载速度受网络影响，请耐心等待。</p>
+            <p>• 浏览器地址栏以 <code>https</code> 开头确保加密连接，如遇证书警告请勿继续操作。</p>
+            <p>• 该站点没有自动跳转手机版，在移动端浏览时可手动缩放页面，体验更佳。</p>
+        </div>
+
+        <!-- FAQ 摘要 (两条) -->
+        <div class="faq-summary">
+            <h2>常见疑问 · 摘要</h2>
+            <div class="faq-item">
+                <div class="q">问：网站主要面向哪类用户？</div>
+                <div class="a">答：对游戏资讯、游戏文化有兴趣的普通玩家及轻度研究者，内容以中文为主，门槛不高。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">问：是否需要注册才能浏览？</div>
+                <div class="a">答：大部分内容无需登录即可阅读，部分互动功能（如评论、收藏）可能需要账号，请按需决定。</div>
+            </div>
+            <p style="margin-top: 1rem; text-indent: 0; font-size: 0.95rem;">更多说明可在站内“关于”页面或相关公告中找到，建议先浏览几个主要栏目再深入使用。</p>
+        </div>
+
+        <!-- 底部链接 -->
+        <div class="footer-links">
+            <p style="margin:0; text-indent:0;">
+                主要入口：<a href="https://webzh-i-game.com.cn">爱游戏</a> 
+                <span style="margin:0 12px; color:#cbbeb0;">·</span> 
+                建议使用最新版浏览器访问，保持页面功能完整。
+            </p>
+            <p style="margin:0.8rem 0 0; text-indent:0; font-size:0.9rem; color:#8f7f6c;">
+                本文档为介绍页，内容仅供参考，不构成任何形式的保证。
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
